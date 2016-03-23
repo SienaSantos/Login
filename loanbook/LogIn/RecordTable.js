@@ -5,8 +5,7 @@ var RecordTable = React.createClass({
         var rows = this.props.content.map(function(record, index){
             return (
               <tr key={index}>
-                <td>{record.task}</td>
-                <td>{record.elapsed}</td>
+                <td>{record.list}</td>
               </tr>
             );
         })
@@ -16,8 +15,7 @@ var RecordTable = React.createClass({
             <table className="table">
               <thead>
                 <tr>
-                  <th>Task/s</th>
-                  <th>Duration</th>
+                  <th>List</th>
                 </tr>
               </thead>
               <tbody>
